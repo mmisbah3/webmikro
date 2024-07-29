@@ -1,0 +1,22 @@
+function onSelectionChange()
+{
+// User Setting
+var hdrRow=3
+var hdrCol=2
+var xynethairColor="BROWN"
+
+// Main script
+var range=SpreadsheetApp.getActiveRange();
+if ((range.getColumn()>=hdrCol)&&(range.getRow()>=hdrRow))
+{
+var sheet=range.getSheet();
+var lr=sheet.getLastRow();
+var lc=sheet.getLastColumn();
+sheet.getRange(hdrRow,hdrCol,(lr-hdrRow+1),(lc-hdrCol+1)).
+setBackground(null);
+sheet.getRange(hdrRow,range.getColumn(),(lr-hdrRow+1),
+range.getNumColumns()).setBackground(xynethairColor);
+sheet.getRange(range.getRow(),hdrCol,range.getNumRows(),
+(lc-hdrCol+1)).setBackground(xynethairColor);
+}
+}

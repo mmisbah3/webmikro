@@ -1,0 +1,215 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>QA Lab Activity</title>
+<meta name="generator" content="Muhamad Misbah">
+<link href="favicon.ico" rel="icon">
+<link href="bootstrap/jquery-ui.min.css" rel="stylesheet">
+<link href="fontawesome6.min.css" rel="stylesheet">
+<link href="projek_1.css" rel="stylesheet">
+<link href="Log-Book1.css" rel="stylesheet">
+<script src="jquery-3.7.1.min.js"></script>
+<script src="jquery-ui.min.js"></script>
+<script src="popper.min.js"></script>
+<script src="bootstrap.min.js"></script>
+<script>
+function onChangeGoMenu1(){var a=document.getElementById('GoMenu1-select'),b=a.options[a.selectedIndex].value,c=a.options[a.selectedIndex].className;a.selectedIndex=0;a.blur();b&&(NewWin=window.open(b,c),window.NewWin.focus())};
+</script>
+<link rel="stylesheet" href="magnificpopup/magnific-popup.css">
+<script src="magnificpopup/jquery.magnific-popup.min.js"></script>
+<script>
+function displaylightbox(url, options)
+{
+   options.items = { src: url };
+   options.type = 'iframe';
+   $.magnificPopup.open(options);
+}
+</script>
+<script>
+document.addEventListener('DOMContentLoaded', function(event)
+{
+   var DropdownMenu1_dropdownToggle = document.querySelectorAll('#DropdownMenu1 .dropdown-toggle');
+   DropdownMenu1_dropdownToggle.forEach(item => 
+   {
+      var dropdown = new bootstrap.Dropdown(item, {popperConfig:{placement:item.getAttribute('data-bs-placement')}});
+   });
+   var DropdownMenu1_dropdown = document.querySelectorAll('#DropdownMenu1 .dropdown');
+   DropdownMenu1_dropdown.forEach(item => 
+   {
+      item.addEventListener('shown.bs.dropdown', function(e)
+      {
+         e.currentTarget.classList.add('show');
+      });
+      item.addEventListener('hidden.bs.dropdown', function(e)
+      {
+         e.currentTarget.classList.remove('show');
+      });
+   });
+});
+</script>
+<script>
+$(document).ready(function()
+{
+   $("#DatePicker1").datepicker(
+   {
+      changeMonth: false,
+      changeYear: false,
+      showButtonPanel: false,
+      showAnim: 'show'
+   });
+   $("#DatePicker1").datepicker("setDate", "");
+   $("#DatePicker1").change(function()
+   {
+      $('#DatePicker1-input').attr('value',$(this).val());
+   });
+});
+</script>
+</head>
+<body>
+<div id="wb_Image3" style="position:absolute;left:1px;top:15px;width:1366px;height:670px;opacity:0.30;z-index:0;">
+<img src="images/bg_login.jpg" id="Image3" alt="" width="1366" height="768"></div>
+<a id="Button2" href="https://docs.google.com/spreadsheets/d/13JlNjXfQq1saPelXQWsUlKpr61oqKkMXeQHhNNCU0t0/edit?usp=drive_link" target="_blank" title="Base Powder" style="position:absolute;left:13px;top:145px;width:124px;height:62px;z-index:1;">Base Powder</a>
+<div id="wb_Heading1" style="position:absolute;left:13px;top:106px;width:217px;height:23px;z-index:2;">
+<h2 id="Heading1">Log Book In Proses<br></h2></div>
+<a id="Button3" href="https://docs.google.com/spreadsheets/d/1gVVfn8kOLRwpVAnBZvRfKtdhbVGOvSssvU7Y4wpkAws/edit?usp=drive_link" target="_blank" title="Concentrate Tank" style="position:absolute;left:308px;top:145px;width:124px;height:62px;z-index:3;">Concentrate Tank</a>
+<a id="Button4" href="https://docs.google.com/spreadsheets/d/1ocCPOTgdY1JOBMmhFskotgju4yWITuMeZcIid3G3MVU/edit?usp=drive_link" target="_blank" title="Buffer Tank" style="position:absolute;left:160px;top:145px;width:124px;height:62px;z-index:4;">Buffer Tank</a>
+<a id="Button5" href="https://docs.google.com/spreadsheets/d/1Qg4R4gfMphyyyEBN6iUUZNvtGzFAHzwglkvx7llA_4A/edit?usp=drive_link" target="_blank" title="Blending" style="position:absolute;left:606px;top:145px;width:124px;height:62px;z-index:5;">Blending</a>
+<a id="Button7" href="https://docs.google.com/spreadsheets/d/1e7gbmILiLYWG8OXjR9XIjGK69YwaV-ekXJUennJ8qRs/edit?usp=drive_link" target="_blank" title="Tailing Cut" style="position:absolute;left:457px;top:145px;width:124px;height:62px;z-index:6;">Tailing Cut</a>
+<div id="wb_Heading2" style="position:absolute;left:13px;top:223px;width:271px;height:23px;z-index:7;">
+<h2 id="Heading2">Log Book Finish Product</h2></div>
+<a id="Button8" href="https://docs.google.com/spreadsheets/d/1yCCENz1kuA097HY6dsT0Zfu2fMHtVp3XDtFDKiEXEaA/edit?usp=drive_link" target="_blank" title="Finish Product" style="position:absolute;left:13px;top:260px;width:124px;height:62px;z-index:8;">Finish Product</a>
+<a id="Button9" href="https://docs.google.com/spreadsheets/d/1GL98QJHaY2AdJx8VgQhcK4MxSZ87jffIfpBJQzFELmw/edit?usp=drive_link" target="_blank" title="Flushing" style="position:absolute;left:160px;top:260px;width:124px;height:62px;z-index:9;">Flushing</a>
+<div id="wb_Heading3" style="position:absolute;left:13px;top:337px;width:271px;height:23px;z-index:10;">
+<h2 id="Heading3">Log Book Environment</h2></div>
+<a id="Button10" href="https://docs.google.com/spreadsheets/d/13LpVhI9T7QRJwYvg9kaJbLJiurtImsvLl_xcLG33_HU/edit?usp=drive_link" target="_blank" title="Alat Produksi" style="position:absolute;left:13px;top:375px;width:124px;height:62px;z-index:11;">Alat Produksi</a>
+<a id="Button11" href="https://docs.google.com/spreadsheets/d/1aOoQqCOdSOy_oleim225jaH3XGBoEr9I0iXnZR1bj4s/edit?usp=drive_link" target="_blank" title="Finish Product" style="position:absolute;left:160px;top:375px;width:124px;height:62px;z-index:12;">Swab Bin</a>
+<a id="Button12" href="https://docs.google.com/spreadsheets/d/1X_3npU0kEuoMcu3PzVRwM1yBkBeKYU_B377I61mhPDk/edit?usp=drive_link" target="_blank" title="Monitoring Awal Jalan" style="position:absolute;left:308px;top:375px;width:124px;height:62px;z-index:13;">Monitoring Awal Jalan</a>
+<a id="Button13" href="https://docs.google.com/spreadsheets/d/1buNhY5fEOM_u9SbQB7YLK60BOo_ID90MlzbbGrA2VYI/edit?usp=drive_link" target="_blank" title="Siever &amp; Metal Catcher" style="position:absolute;left:457px;top:375px;width:124px;height:62px;z-index:14;">Metal Catcher & Siever</a>
+<a id="Button14" href="https://docs.google.com/spreadsheets/d/1SQoIxfHxVEvpkA_MIJLRjwCyYMg3vUhK/edit?usp=drive_link&ouid=100632379816227668987&rtpof=true&sd=true" target="_blank" title="Swab Dumping" style="position:absolute;left:606px;top:375px;width:124px;height:62px;z-index:15;">Swab Dumping</a>
+<a id="Button15" href="https://docs.google.com/spreadsheets/d/1LhFhNH5-o2s_-thX9Od5gQZxI5ItHuzA4uXSWd6USt8/edit?usp=drive_link" target="_blank" title="Swab Frontline" style="position:absolute;left:757px;top:375px;width:124px;height:62px;z-index:16;">Swab Frontline</a>
+<a id="Button16" href="https://docs.google.com/spreadsheets/d/1Qovu9NJQ3RjGdKqTG98CluDtF6IWVPbRs54WiInRtno/edit?usp=drive_link" target="_blank" title="Swab PRP" style="position:absolute;left:13px;top:471px;width:124px;height:62px;z-index:17;">Swab PRP</a>
+<a id="Button17" href="https://docs.google.com/spreadsheets/d/1CwJge6Z7uiNXZMbDH0J-4maBZI9WXF0wefUMGsO0HiA/edit?usp=drive_link" target="_blank" title="Swab OPRP" style="position:absolute;left:160px;top:471px;width:124px;height:62px;z-index:18;">Swab OPRP</a>
+<a id="Button18" href="https://docs.google.com/spreadsheets/d/1K5lwK0_AjY3izqV99SifeNzTg459mCXCsVaCFBkk6qg/edit?usp=drive_link" target="_blank" title="Air Bilasan CIP" style="position:absolute;left:308px;top:471px;width:124px;height:62px;z-index:19;">Air Bilasan CIP</a>
+<a id="Button19" href="https://docs.google.com/spreadsheets/d/1V82tPUcIugAYbLLN1CT9TP_8mQxh5yoC_fjYFT2Z-w4/edit?usp=drive_link" target="_blank" title="Air Harian" style="position:absolute;left:457px;top:471px;width:124px;height:62px;z-index:20;">Air Harian</a>
+<a id="Button20" href="https://docs.google.com/spreadsheets/d/1TeIcKda1JysqNON3jV0fkAMZ7uC-2go3bHDsmpxBLoA/edit?usp=drive_link" target="_blank" title="Eksposure" style="position:absolute;left:606px;top:471px;width:124px;height:62px;z-index:21;">Eksposure</a>
+<a id="Button21" href="https://docs.google.com/spreadsheets/d/1wGQSPfxYp5RywV2KtJxXTKwc7J6VIghe/edit?usp=drive_link&ouid=100632379816227668987&rtpof=true&sd=true" target="_blank" title="Particle Count" style="position:absolute;left:757px;top:471px;width:124px;height:62px;z-index:22;">Particle Count</a>
+<a id="Button22" href="https://docs.google.com/spreadsheets/d/1BHS6f_cWQPcWDzQEJt4Taa7sZp5Lv1Dqrlr1itTOLGM/edit?usp=drive_link" target="_blank" title="RM / PM" style="position:absolute;left:308px;top:260px;width:124px;height:62px;z-index:23;">RM / PM</a>
+<a id="Button23" href="https://docs.google.com/spreadsheets/d/1yntaIxoGLtG3fg5fZYI4N4XSfhNAatKx-yxstYms9zg/edit?usp=drive_link" target="_blank" title="Temuan Outspec" style="position:absolute;left:457px;top:260px;width:124px;height:62px;z-index:24;">Temuan Outspec</a>
+<div id="wb_Heading4" style="position:absolute;left:13px;top:561px;width:124px;height:23px;z-index:25;">
+<h2 id="Heading4">File Mikro</h2></div>
+<a id="Button24" href="https://docs.google.com/spreadsheets/d/1OY0oHecSvmjBAzr8DzcRc9J3TWMnLVoTdgORUoVl8rc/edit?usp=drive_link" target="_blank" title="Log Book Mikro" style="position:absolute;left:13px;top:598px;width:124px;height:62px;z-index:26;">Log Book Mikro</a>
+<a id="Button25" href="https://docs.google.com/spreadsheets/d/1OZLIkF6rTL4d4qUMl87evqb3uTfP-0GjqKUpe2P_MNQ/edit?usp=drive_link" target="_blank" title="Record Jam" style="position:absolute;left:160px;top:598px;width:124px;height:62px;z-index:27;">Record Jam</a>
+<a id="Button26" href="https://docs.google.com/spreadsheets/d/1iME4tAsP4LduWttwp3a1HFb0AntoF8tfKGWJWi2UEPA/edit?usp=share_link" target="_blank" title="Release Bin" style="position:absolute;left:308px;top:598px;width:124px;height:62px;z-index:28;">Release Bin</a>
+<a id="Button27" href="https://docs.google.com/spreadsheets/d/1eFUNTYADz8T9cJ-zO-c1AygwQCmab270PqpXZSqVKb4/edit?usp=drive_link" target="_blank" title="Form Oracle" style="position:absolute;left:457px;top:598px;width:124px;height:62px;z-index:29;">Form Oracle</a>
+<a id="Button28" href="https://docs.google.com/spreadsheets/d/1flsYs7962sXu1qVsDDNioEILUagIscEWFfkXOwuquA0/edit#gid=226677427" target="_blank" title="Absen QA" style="position:absolute;left:606px;top:598px;width:124px;height:62px;z-index:30;">Absen QA</a>
+<a id="Button29" href="https://docs.google.com/spreadsheets/d/1esxXCOLj7gxJrFvPjSexZnWC1SEq3GmU/edit#gid=1554821936" target="_blank" title="Sample Register" style="position:absolute;left:757px;top:598px;width:124px;height:62px;z-index:31;">Sample Register</a>
+<div id="wb_DatePicker1" style="position:absolute;left:1158px;top:53px;width:243px;height:189px;z-index:32;">
+<input id="DatePicker1-input" name="DatePicker1" style="display:none" type="text" value="">
+<div id="DatePicker1" style="position:absolute;left:$LEFT$px;top:$TOP$px;width:$WIDTH$px;height:193px;z-index:32;">
+</div></div>
+<div id="wb_GoMenu1" style="position:absolute;left:13px;top:19px;width:225px;height:55px;z-index:33;">
+<form id="GoMenu1" role="menu">
+<select id="GoMenu1-select" name="GoMenu1" onchange="onChangeGoMenu1()">
+<option class="_self" value="#" selected>Web KMI</option>
+<option class="_self" value="" role="menuitem"></option>
+<option class="_self" value="javascript:displaylightbox('http://10.175.14.215/kalbe/linea/index2.php',{})" role="menuitem">Line A</option>
+<option class="_self" value="javascript:displaylightbox('http://10.175.14.215/kalbe/lineb/index2.php',{})" role="menuitem">Line B</option>
+<option class="_self" value="javascript:displaylightbox('http://10.175.14.215/kalbe/linej/index2.php',{})" role="menuitem">Line D</option>
+<option class="_self" value="javascript:displaylightbox('http://10.175.14.215/kalbe/linee/index2.php',{})" role="menuitem">Line E</option>
+<option class="_blank" value="http://kmioracle.kalbemorinaga.local:8000/" role="menuitem">Oracle</option>
+<option class="_blank" value="http://kmiportal.kalbemorinaga.local/improvement_v2/" role="menuitem">Improvement</option>
+<option class="_blank" value="http://10.175.11.75/liga-cg/admin/login" role="menuitem">TPM</option>
+<option class="_blank" value="http://kmiportal.kalbemorinaga.local/appgm5p/" role="menuitem">GMP</option>
+<option class="_blank" value="https://captivekmi.kalbenutritionals.com:6082/php/uid.php?vsys=1&rule=2&url=http://hp17win10.msn.com%2f%3fpc%3dHCTE" role="menuitem">Captive KMI</option>
+<option class="_blank" value="http://10.175.13.146/" role="menuitem">Web Release BIN</option>
+</select>
+</form>
+</div>
+<div id="Html1" style="position:absolute;left:1158px;top:15px;width:225px;height:38px;z-index:34">
+<!DOCTYPE html>
+<html>
+<head>
+<title>jam gue</title>
+<script>
+ window.onload = function() { jam(); }
+
+ function jam() {
+  var e = document.getElementById('jam'),
+  d = new Date(), h, m, s;
+  h = d.getHours();
+  m = set(d.getMinutes());
+  s = set(d.getSeconds());
+
+  e.innerHTML = h +':'+ m +':'+ s;
+
+  setTimeout('jam()', 1000);
+ }
+
+ function set(e) {
+  e = e < 10 ? '0'+ e : e;
+  return e;
+ }
+</script>
+</head>
+<body>
+<center>
+<h1 style="font-size: 20px; font-family: verdana;" id="jam"></h1>
+</left>
+</body>
+</html></div>
+<div id="wb_DropdownMenu1" style="position:absolute;left:1164px;top:272px;width:159px;height:85px;z-index:35;">
+<div id="DropdownMenu1" class="DropdownMenu1" style="width:100%;height:auto !important;">
+<div class="container">
+<div class="navbar-header">
+<button title="Dropdown Menu" type="button" class="navbar-toggle" data-bs-toggle="collapse" data-bs-target=".DropdownMenu1-navbar-collapse">
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+</div>
+<div class="DropdownMenu1-navbar-collapse collapse">
+<ul class="nav navbar-nav">
+<li class="nav-item dropdown">
+<a href="#" class="dropdown-toggle" data-bs-placement="bottom-start" data-bs-toggle="dropdown">Record FG Packing<b class="caret"></b></a>
+<ul class="dropdown-menu">
+<li class="nav-item dropdown-item">
+<a href="https://docs.google.com/spreadsheets/d/1ajI8redeoCCMIuVPb6VzU4c-61-RitIs/edit?usp=drive_link&ouid=114061069227598456740&rtpof=true&sd=true" target="_blank" class="nav-link"><i class="fa fa-regular fa-file-excel"></i>Line A</a>
+</li>
+<li class="nav-item dropdown-item">
+<a href="https://docs.google.com/spreadsheets/d/1lY3xuPeX5CJVwXE_xyyEOCWpZvD0ADWk/edit?usp=drive_link&ouid=114061069227598456740&rtpof=true&sd=true" target="_blank" class="nav-link"><i class="fa fa-regular fa-file-excel"></i>Line B</a>
+</li>
+<li class="nav-item dropdown-item">
+<a href="https://docs.google.com/spreadsheets/d/1XJkXZ1RaXzJcEyKMfp78_fB4Ja7h1sV3/edit?usp=drive_link&ouid=114061069227598456740&rtpof=true&sd=true" target="_blank" class="nav-link"><i class="fa fa-regular fa-file-excel"></i>Line DJ</a>
+</li>
+<li class="nav-item dropdown-item">
+<a href="https://docs.google.com/spreadsheets/d/1z5PKQGKCN2rxZuLc4o4ZlFKrRplXsx8e/edit?usp=drive_link&ouid=114061069227598456740&rtpof=true&sd=true" target="_blank" class="nav-link"><i class="fa fa-regular fa-file-excel"></i>Line E</a>
+</li>
+<li class="nav-item dropdown-item">
+<a href="https://docs.google.com/spreadsheets/d/1SSKwmEkJDUDhJsQ6Xuzx17F_0xIGtKPo/edit?usp=drive_link&ouid=114061069227598456740&rtpof=true&sd=true" target="_blank" class="nav-link"><i class="fa fa-regular fa-file-excel"></i>Line F</a>
+</li>
+</ul>
+</li>
+<li class="nav-item dropdown">
+<a href="#" class="dropdown-toggle" data-bs-placement="bottom-start" data-bs-toggle="dropdown">Drive Mikro<b class="caret"></b></a>
+<ul class="dropdown-menu">
+<li class="nav-item dropdown-item">
+<a href="https://drive.google.com/drive/folders/1Up1RR7N2JDYqRQ8BGpZk8NwYN8s1W31A" target="_blank" class="nav-link"><i class="fa fa-folder"></i>Google Drive Mikro 2024</a>
+</li>
+<li class="nav-item dropdown-item">
+<a href="https://drive.google.com/drive/folders/1FOi25c5TcQVjstDqfRiCWGONoSNRv4i-" target="_blank" class="nav-link"><i class="fa fa-folder"></i>COSTUMER COMPLAIN</a>
+</li>
+<li class="nav-item dropdown-item">
+<a href="https://drive.google.com/drive/folders/1C1ecgliPbkDTOEfOGjjFmddemPs_o-W3" target="_blank" title="Hygiene" class="nav-link"><i class="fa fa-folder"></i>Hygiene</a>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div></div>
+<a id="Button1" href="https://docs.google.com/spreadsheets/d/1HdIluCl-GktQKL87KcF0dBwPPMLPUyg-/edit?usp=drive_link&ouid=100632379816227668987&rtpof=true&sd=true" target="_blank" title="Monitoring Lab" style="position:absolute;left:904px;top:375px;width:124px;height:62px;z-index:36;">Monitoring Lab</a>
+<a id="Button6" href="https://docs.google.com/spreadsheets/d/1lGTKjPaKN9sWaguKxqFXtrwoV0vHwr8eaQ0XsDrCfEc/edit#gid=1218143714" target="_blank" title="PCR KOMPOSIT" style="position:absolute;left:606px;top:260px;width:124px;height:62px;z-index:37;">PCR KOMPOSIT</a>
+<a id="Button30" href="https://docs.google.com/spreadsheets/d/18jMWvTZK6yaGke3BwmouA8zeEcOFuU6A/edit?gid=1618799694#gid=1618799694" target="_blank" title="Genba Hygiene" style="position:absolute;left:904px;top:471px;width:124px;height:62px;z-index:38;">Genba Hygiene</a>
+</body>
+</html>
